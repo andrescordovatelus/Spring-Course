@@ -5,3 +5,15 @@ With Spring Framework, you can build a variety of applications using Java, Sprin
 	-REST API
 	-Full Stack
 	-Microservices.
+
+In order to initialize a Spring Project, you must go at this link: https://start.spring.io/
+
+Why is Coupling Important?
+	--> Coupling: How much work is involved in changing something?
+		*Coupling is important everywhere:
+
+	--> Coupling is even more important in building great software.
+		-*Only thing constant in technology is change
+			-Business requirements change.
+			-Frameworks change.
+			-Code changes.
