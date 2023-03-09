@@ -110,3 +110,11 @@ Bean Factory: Basic Spring IOC Container.
 Application Context: Advanced Spring IOC Container with enterprise-specific features.
 
 Auto-wiring: Process of wiring dependencies for a Spring Bean
+
+
+---------------------------------------------------------------------------
+Spring Framework: Dependency Injection
+
+Spring MVC: Simplify building web apps and REST API
+
+Spring Boot: Build Production-Ready apps QUICKLY
