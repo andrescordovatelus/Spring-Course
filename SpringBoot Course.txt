@@ -8,6 +8,7 @@ With Spring Framework, you can build a variety of applications using Java, Sprin
 
 In order to initialize a Spring Project, you must go at this link: https://start.spring.io/
 
+---------------------------------------------------------------------------
 Why is Coupling Important?
 	--> Coupling: How much work is involved in changing something?
 		*Coupling is important everywhere:
@@ -18,8 +19,10 @@ Why is Coupling Important?
 			-Frameworks change.
 			-Code changes.
 
+---------------------------------------------------------------------------
 
 Any Java Object is a Pojo
+---------------------------------------------------------------------------
 
 Java Beans:
 	1. Have public default constructors.
@@ -34,6 +37,7 @@ Spring Bean: Any Java Object tht is managed by Spring.
 	Spring uses IOC Contaniner (Bean Factory or Application Context) to 
 	manage these objects.
 
+---------------------------------------------------------------------------
 
 @Primary: A bean should be given preference when multiple candidates are qualified
 @Qualifier: A specific bean should be auto-wired (name of the bean can be used as qualifier)
@@ -44,3 +48,65 @@ Spring Bean: Any Java Object tht is managed by Spring.
 Dependency Injection: identify beans, their de[endencies and wire them together
 
 @AutoWired: Process of wiring in dependencies for a Spring Bean
+
+@Lazy annotation
+	-Can be used almost everywhere @Component and @Bean are used.
+	-Lazy-resolution proxy will be injected instead of actual dependency.
+
+	IMPORTANT:
+	However, you can configure beans to be lazily initialized using Lazy annotation but:
+		=> NOT recommended (AND) not frequently used..
+
+---------------------------------------------------------------------------
+
+Spring Beans are defined to be used in a specific scope:
+	=>Singleton> One object instance per Spring IoC container.
+	=>Prototype> Possibly many object instances per Spring IoC container.
+
+Scopes applicable ONLY or web-aware Spring ApplicationContext
+
+---------------------------------------------------------------------------
+
+JAVA SINGLETON (GOF) vs SPRING SINGLETON
+	+Spring Singleton: One object instance per Spring IoC container.
+	+Java Singleton (GOF): One object instance per JVM
+
+---------------------------------------------------------------------------
+
+With the time, the were separated out:
+	-J2EE - Java 2 Platform Enterprise Edition.
+	-Java EE - Java Platform Enterprise Edition (Rebranding)
+	-Jakarta EE (Oracle gave Java EE rights to the Eclipse Foundation)
+		=>Important Specifications:
+			-Jakarta Server Pages (JSP)
+			-Jakarta Standard Tag Library (JSTL)
+			-Jakarta Enterprise Beans (EJB)
+			-Jakarta RESTful Web Services (JAX-RS)
+			-Jakarta Bean Validation
+			-Jakarta Contexts and Dependency Injection (CDI)
+			-Jakarta Persistence (JPA)
+
+---------------------------------------------------------------------------
+
+@Service - Indicates that an annotated class has business logic.
+@Controller - Indicates that and annotated class is a "Controller"
+					used to define controllers in  your we applications.
+@Repository - Indicates that an annotated class is used to retrieve and/or manipulate data in a database
+
+---------------------------------------------------------------------------
+
+Dependency Injection: Identify beans, their dependencies and wire them together
+
+Constr.Injection: Dependencies are set by creating the BEan using its Constructor
+
+Setter Injection: Dependencies are set by calling setter methods on your beans.
+
+Field Injection: No setter or contructor. Dependency is injected using reflection.
+
+IOC COntainer: Spring IOC COntext that manages Spring beans & their lifecycle.
+
+Bean Factory: Basic Spring IOC Container.
+
+Application Context: Advanced Spring IOC Container with enterprise-specific features.
+
+Auto-wiring: Process of wiring dependencies for a Spring Bean
