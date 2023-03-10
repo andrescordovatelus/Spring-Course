@@ -131,3 +131,14 @@ In order to initialize a new project, we must to put the following dependencies:
 And also, we have to set up tje application.properties:
 	spring.h2.console.enabled=true
 	spring.datasource.url=jdbc:h2:mem:testdb
+
+Entity Manager is to manage entities around the bd.
+
+	merge: to insert.
+	find: to find.
+	delete: to remove
+
+
+JPA defines the specification. It is an API.
+Hibernate is one of the popular implementations of JPA.
+Using Hibernate directly would result in a lock in to Hubernate.
