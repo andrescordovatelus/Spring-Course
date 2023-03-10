@@ -142,3 +142,6 @@ Entity Manager is to manage entities around the bd.
 JPA defines the specification. It is an API.
 Hibernate is one of the popular implementations of JPA.
 Using Hibernate directly would result in a lock in to Hubernate.
+
+---------------------------------------------------------------------------
+> KNOWING WHAT TO LOG is an essential skill to be a great programmer.
