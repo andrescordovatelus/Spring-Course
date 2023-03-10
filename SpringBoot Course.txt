@@ -118,3 +118,16 @@ Spring Framework: Dependency Injection
 Spring MVC: Simplify building web apps and REST API
 
 Spring Boot: Build Production-Ready apps QUICKLY
+
+---------------------------------------------------------------------------
+				LEARNING JPA AND HIBERNATE
+
+In order to initialize a new project, we must to put the following dependencies:
+	=>Spring Web
+	=>Spring Data JDBC
+	=>Spring Data JPA
+	=>H2 DATABASE
+
+And also, we have to set up tje application.properties:
+	spring.h2.console.enabled=true
+	spring.datasource.url=jdbc:h2:mem:testdb
