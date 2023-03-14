@@ -154,3 +154,13 @@ Validations with Spring Boot.
 		2-way binding (todo.jsp & TodoController.java)
 	3. Add validations to bean.
 	4. Display validations Errors in the view.
+
+---------------------------------------------------------------------------
+
+REQUEST METHODS FOR REST API
+
+GET => Retrieve details of a resource.
+POST => Create a new resource.
+PUT => Update an existing resource.
+PATCH => Update part of a resource.
+DELETE => Delete a resource.
