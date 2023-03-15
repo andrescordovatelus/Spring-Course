@@ -164,3 +164,17 @@ POST => Create a new resource.
 PUT => Update an existing resource.
 PATCH => Update part of a resource.
 DELETE => Delete a resource.
+
+---------------------------------------------------------------------------
+
+Factors to consider to version API
+
+=> URI Pollution
+=> Misuse of HTTP Headers
+=> Caching
+=> Can we execute the request on the browser?
+=> API Documentation
+---------------------------------------------------------------------------
+
+HATEOAS
+(Hypermedia as the Engine of Application State)
